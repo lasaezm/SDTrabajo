@@ -10,6 +10,7 @@ public class Cliente {
 			 ObjectOutputStream out = new ObjectOutputStream(s.getOutputStream());
 			 ObjectInputStream in = new ObjectInputStream(s.getInputStream());
 			 Scanner sc = new Scanner(System.in);) 
+		{
 			System.out.println(in.readLine());
 			boolean tocaJugar = in.readBoolean();
 			
