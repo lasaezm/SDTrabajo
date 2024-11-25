@@ -28,20 +28,17 @@ public class AtenderPeticion extends Thread {
 				out1.writeBytes("Eres el jugador 1 \n");
 				out1.writeBoolean(true);
 				out1.flush();
-				//colocarBarcos(out1, in1, tablero1, turno + 1);
+				
 				out2.writeBytes("Eres el jugador 2 \n");
 				out2.writeBoolean(false);
 				out2.flush();
-				//colocarBarcos(out2, in2, tablero2, turno + 2);
 			} else {
 				out2.writeBytes("Eres el jugador 1 \n");
 				out2.writeBoolean(true);
 				out2.flush();
-				//colocarBarcos(out2, in2, tablero1, turno);
 				out1.writeBytes("Eres el jugador 2 \n");
 				out1.writeBoolean(false);
 				out1.flush();
-				//colocarBarcos(out1, in1, tablero2, turno + 1);
 			}
 
 			// Mostrar tableros
